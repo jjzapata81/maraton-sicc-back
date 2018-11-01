@@ -1,15 +1,15 @@
 package com.tns.maraton.util;
 
-import com.tns.maraton.exceptions.BusinessException;
-import org.apache.tomcat.util.http.fileupload.disk.DiskFileItem;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
-import sun.misc.IOUtils;
 
-import java.io.*;
+import com.tns.maraton.exceptions.BusinessException;
 
 public class FileUtilTest {
 
