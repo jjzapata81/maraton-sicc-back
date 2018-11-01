@@ -10,6 +10,7 @@ import java.io.File;
 public class MaratonClient extends ClientBase{
 
     public RecognizeResponse register(File imageFile, String user) {
+
         return consumeService(imageFile, user, Constants.REGISTER, RecognizeResponse.class);
     }
 
