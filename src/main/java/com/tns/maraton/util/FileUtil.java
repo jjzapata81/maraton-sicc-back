@@ -13,12 +13,13 @@ public final class FileUtil {
 
     public static File convert(MultipartFile file) {
         try{
-            File convFile = new File(file.getOriginalFilename());
-            convFile.createNewFile();
-            FileOutputStream fos = new FileOutputStream(convFile);
-            fos.write(file.getBytes());
-            fos.close();
-            return convFile;
+            File convertFile = new File(file.getOriginalFilename());
+            convertFile.createNewFile();
+            try(FileOutputStream fos = new FileOutputStream(convertFile)) {
+                fos.write(file.getBytes());
+
+                return convertFile;
+            }
         }catch (IOException e){
             throw new BusinessException(Constants.FILE_ERROR, e);
         }

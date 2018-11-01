@@ -14,6 +14,10 @@ public final class Constants {
     public static final String CONECTION_ERROR = "Falló la conexión con el servicio";
     public static final String UNDER_CONSTRUCTION = "En conctrucción!!";
     public static final String FILE_ERROR = "Error en la creación del archivo.";
+    public static final String FILE_NULL = "El archivo es nulo";
+    public static final String TEXT_CONTAINS_SPACES = "El texto ingresado contiene espacios";
+    public static final String TEXT_NULL = "El texto ingresado es nulo";
+    public static final String TEXT_INITIATION_NUMBERS = "El texto ingresado inicia con numeros";
     private static final Integer CODE_410 = 410;
     private static final Integer CODE_411 = 411;
     private static final Integer CODE_412 = 412;
