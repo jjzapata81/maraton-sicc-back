@@ -1,10 +1,10 @@
 package com.tns.maraton.client;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.tns.maraton.exceptions.BusinessException;
 import com.tns.maraton.util.Constants;
 import com.tns.maraton.util.UtilityClient;
 import org.springframework.stereotype.Component;
+
 
 import java.io.File;
 import java.io.IOException;
