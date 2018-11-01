@@ -23,6 +23,5 @@ public class ClientBase {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }

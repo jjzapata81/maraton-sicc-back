@@ -43,5 +43,4 @@ public final class Constants {
         errorMap.put(CODE_412, _412);
         errorMap.put(CODE_413, _413);
     }
-
 }
