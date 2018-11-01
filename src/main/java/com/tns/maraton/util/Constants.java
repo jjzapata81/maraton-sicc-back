@@ -11,12 +11,12 @@ public final class Constants {
     public static final String URL_SERVICE = "http://hackaton.techandsolve.com:5001/";
     public static final String REGISTER = "register";
     public static final String COMPARE = "compare-face";
-    public static final String CONECTION_ERROR = "Falló la conexión con el servicio";
-    public static final String UNDER_CONSTRUCTION = "En conctrucción!!";
     public static final String FILE_ERROR = "Error en la creación del archivo.";
     public static final String FILE_NULL = "El archivo es nulo";
     public static final String TEXT_CONTAINS_SPACES = "El texto ingresado contiene espacios";
-    public static final String TEXT_NULL = "El texto ingresado es nulo";
+    public static final String TEXT_CONTAINS_CHARACTERS_ESPECIALS = "El texto ingresado contiene caracteres especiales";
+    public static final String TEXT_SIZE_INVALID = "El tamaño del texto no cumple las condiciones de longitud";
+    public static final String FIlE_SIZE_INVALID = "El tamaño del archivo supera el limite";
     public static final String TEXT_INITIATION_NUMBERS = "El texto ingresado inicia con numeros";
     private static final Integer CODE_410 = 410;
     private static final Integer CODE_411 = 411;

@@ -63,5 +63,4 @@ public class LoginServiceTest {
         verify(validate).isNotNull(file);
     }
 
-
 }

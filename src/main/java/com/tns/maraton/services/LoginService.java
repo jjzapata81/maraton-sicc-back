@@ -28,11 +28,13 @@ public class LoginService {
     }
 
     public RecognizeResponse register(File file, String user) {
-        if (validate.isNotNull(file)) {
+        if (validate.isNotNull(file) || validate.isVoidChain(user)) {
             return client.register(file, user);
         }
-
-        throw new BusinessException(Constants.FILE_NULL);
-
+        else{
+            throw new BusinessException(Constants.TEXT_CONTAINS_SPACES);
+        }
     }
+
+
 }
